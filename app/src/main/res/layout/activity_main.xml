@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--INNINGS-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/theinnings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="innings"
+                android:text="INNING" />
+        </LinearLayout>
+
+        <!--TEAM A-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <!--TEAM A NAME-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="TEAM A"
+                    android:textSize="14sp" />
+
+                <!--TEAM A LOGO-->
+
+                <!--<RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/team_a_logo"
+                            android:src="" />
+                    </RelativeLayout>-->
+
+                <!--TEAM A RUNS-->
+
+                <TextView
+                    android:id="@+id/team_a_runs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addRunForTeamA"
+                    android:text="runs" />
+
+                <!--TEAM A STRIKES-->
+
+                <TextView
+                    android:id="@+id/team_a_strikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addStrikeForTeamA"
+                    android:text="strikes" />
+
+                <!--TEAM A OUTS-->
+                <TextView
+                    android:id="@+id/team_a_outs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="OUTS"
+                    android:textColor="#212121"
+                    android:textSize="20sp" />
+
+
+                <!--TEAM A BALLS-->
+
+                <TextView
+                    android:id="@+id/team_a_balls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ballsForTeamA"
+                    android:text="balls" />
+
+            </LinearLayout>
+            <!--TEAM B-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+                <!--TEAM B NAME-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="TEAM B"
+                    android:textSize="14sp" />
+
+                <!--TEAM B LOGO-->
+
+                <!--<RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/team_b_logo"
+                        android:src="" />
+                </RelativeLayout>
+-->
+                <!--TEAM B RUNS-->
+
+                <TextView
+                    android:id="@+id/team_b_runs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addRunForTeamB"
+                    android:text="runs" />
+
+                <!--TEAM B STRIKES-->
+
+                <TextView
+                    android:id="@+id/team_b_strikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addStrikeForTeamB"
+                    android:text="strikes" />
+
+                <!--TEAM B OUTS-->
+                <TextView
+                    android:id="@+id/team_b_outs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="OUTS"
+                    android:textColor="#212121"
+                    android:textSize="20sp" />
+
+
+                <!--TEAM B BALLS-->
+
+                <TextView
+                    android:id="@+id/team_b_balls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ballsForTeamB"
+                    android:text="balls" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+
+        android:text="Reset" />
+</RelativeLayout>
